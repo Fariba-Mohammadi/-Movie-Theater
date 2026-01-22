@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>🎥 Hura Movie Theater 🎥</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assignment.css">
+</head>
+<body>
+
+<section class="theater">
+
+    <h1>🍿 Fariba Movie Theater 🍿</h1>
+
+    <marquee>🎬 Now Showing • Popcorn Ready • Enjoy the Movie 🍿</marquee>
+
+    <div class="screen">
+        <video controls>
+            <source src="WhatsApp Video 2026-01-21 at 10.00.51 PM.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="buttons">
+        <button onclick="playAgain()">▶ Play Again</button>
+        <button onclick="rateMovie()">⭐ Rate Movie</button>
+    </div>
+
+    <p class="footer">🎥 Created by Fariba_Mohammadi • Web Design Assignment</p>
+
+</section>
+
+<script>
+function playAgain() {
+    const video = document.querySelector("video");
+    video.currentTime = 0;
+    video.play();
+}
+
+function rateMovie() {
+    alert("🎉 Thanks for rating this movie!");
+}
+</script>
+
+</body>
+</html>
